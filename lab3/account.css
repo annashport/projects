@@ -1,0 +1,120 @@
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: 600px;
+    justify-content: center;
+    align-items: center;
+    background: url(images/a-stack-of-books-with-a-library-scene-behind.jpg) bottom center / auto auto no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    background-color: #7d4fda;
+    min-height: 600px;
+    opacity: 0.7;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.form-group {
+    font-family: "Rubik", sans-serif;
+    z-index: 3;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group h4 {
+    margin-bottom: 40px;
+    color: white;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+fieldset legend {
+    text-align: center;
+    font-size: 14px;
+    color: rgb(44, 11, 75);
+}
+
+.line {
+    width: 100%;
+    margin: 6px 0;
+}
+
+.line input {
+    color: rgb(44, 11, 75);
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.752);
+    border: none;
+    border-radius: 10em;
+    padding: 10px;
+    width: 100%;
+}
+
+form button {
+    margin-top: 20px;
+    color: white;
+    background: none;
+    border: none;
+    font-weight: 600;
+    background-color: #7d4fda67;
+    padding: 10px;
+    border-radius: 10em;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+form button:hover{
+    background-color: rgba(202, 131, 247, 0.461);
+}
+
+@media (min-width: 992px) {
+    main,
+    .overlay {
+        min-height: 800px;
+    }
+
+    .form-group h4 {
+        font-size: 30px;
+    }
+
+    fieldset legend {
+        font-size: 15px;
+    }
+
+    .line input {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .line {
+        margin: 8px 0;
+    }
+
+    form button {
+        margin-top: 36px;
+        font-size: 20px;
+        font-weight: 600;
+        color: white;
+        background: none;
+        background-color: #7d4fda67;
+        border: none;
+        padding: 10px;
+        border-radius: 10em;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+}

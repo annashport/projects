@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&family=Varela+Round&display=swap');
+
+.first-block {
+  display: flex;
+  justify-content: center;
+  height: 450px;
+  position: relative;
+  width: 100%;
+  background: url(images/photo_2024-02-25_17-01-56.jpg) bottom center / auto auto no-repeat;
+  background-size: cover;
+}
+
+.first-block>.overlay {
+  width: 100%;
+  background-color: #7d4fda;
+  height: 100%;
+  opacity: 0.7;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.first-text {
+  display: block;
+  position: absolute;
+  order: 2;
+  height: 20px;
+  top: 25%;
+  color: white;
+  text-align: center;
+  /* font:  1.5rem 'Arial Narrow'; */
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.first-text :last-child {
+  margin-top: 30px;
+}
+
+/* search */
+.search {
+  display: flex;
+  justify-content: center;
+  padding: 10% 0;
+  width: 100%;
+}
+
+.searchform {
+  display: flex;
+  width: 80%;
+}
+
+.search-button {
+  border-radius: 100%;
+  background: url(images/search-13-24.ico) center center / auto auto no-repeat;
+  height: 40px;
+  width: 42px;
+  border: none;
+  background-color: rgb(233, 233, 235);
+  border-style: solid;
+  border-width: 1.6px;
+  border-color: rgb(222, 223, 227);
+  margin-left: 10px;
+}
+
+/* search */
+
+/* bestsellers */
+.bestsellers {
+  background: rgb(125, 79, 218);
+  background: linear-gradient(0deg, rgba(125, 79, 218, 1) 0%, rgba(255, 255, 255, 1) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 10px;
+  color: #50119d;
+}
+
+.books {
+  font-family: "Rubik", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  font-style: normal;
+  width: 95%;
+}
+
+#carouselExampleFade {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-inner {
+  max-width: 95%;
+}
+
+/* bestsellers */
+
+@media (min-width: 570px) {
+  .first-text {
+    font-size: 26px;
+  }
+
+  .bestsellers {
+    flex-direction: row;
+    padding: 60px 12%;
+    justify-content: space-between;
+    color: white;
+  }
+
+  .carousel-inner {
+    width: 250px;
+    margin-left: 10px;
+  }
+
+  .books {
+    max-width: 40%;
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 767px) {
+  .first-text {
+    top: 30%;
+  }
+
+  .carousel-inner {
+    max-width: 290px;
+  }
+
+  .books {
+    max-width: 50%;
+    font-size: 34px;
+  }
+
+  .bestsellers {
+    padding: 10% 14%;
+  }
+
+  .search {
+    padding: 8% 0 0;
+  }
+
+  .searchform {
+    display: flex;
+    width: 65%;
+    height: 50px;
+  }
+
+  .search-button {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .bestsellers {
+    justify-content: space-around;
+    padding: 10% 16%;
+  }
+
+  .carousel-inner {
+    max-width: 380px;
+  }
+}

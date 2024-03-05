@@ -1,0 +1,99 @@
+main {
+    min-height: 300px;
+    background: rgb(180, 150, 242);
+    background: linear-gradient(180deg, rgba(180, 150, 242, 1) 10%, rgba(255, 255, 255, 0.9725140056022409) 56%, rgba(125, 79, 218, 1) 100%);
+    padding: 10% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.anibox {
+    display: flex;
+    justify-content: center;
+}
+
+.anibook {
+    width: 150px;
+    height: 150px;
+}
+
+.book-text {
+    width: 80%;
+    color: rgb(68, 39, 113);
+    font-family: "Rubik", sans-serif;
+}
+
+.book-text li {
+    list-style: circle;
+}
+
+.book-text h4 {
+    padding: 40px 0 0;
+}
+.book-text h3 {
+    padding: 40px 0 0;
+    font-weight: bold;
+    font-style: normal;
+}
+.write{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 20px;
+}
+.write button{
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+    background:none;
+    border-radius: 10em;
+    padding: 5px 20px;
+
+}
+.write button:hover{
+    background-color: rgba(248, 248, 255, 0.43);
+}
+.write a{
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+    font-size: 22px;
+}
+
+
+@media (min-width: 767px) {
+    .book-text {
+        width: 60%;
+    } 
+    .anibox {
+        margin-top: 40px;
+    }
+    .anibook {
+        width: 200px;
+        height: 200px;
+    }
+    .book-text h3 {
+        font-size: 40px;
+        padding-bottom: 40px;
+    }
+    .book-text h4 {
+        font-size: 32px;
+        padding-bottom: 14px;
+    }
+    .book-text p{
+        font-size: 20px;
+    }
+    .book-text li {
+        font-size: 20px;
+    }
+    
+}
+@media (min-width: 992px) {
+main{
+    padding: 6% 8% 2%;
+}
+.book-text {
+    width: 50%;
+
+    
+} 
+}
